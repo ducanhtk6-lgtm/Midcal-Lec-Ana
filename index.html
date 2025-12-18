@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Lecture Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'brand-primary': 'var(--brand-primary)',
+              'brand-secondary': 'var(--brand-secondary)',
+              'slate': {
+                700: 'var(--slate-700)',
+                800: 'var(--slate-800)',
+                900: 'var(--slate-900)',
+              },
+              'sky': {
+                400: 'var(--brand-secondary)',
+                500: 'var(--brand-primary)',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --slate-900: #0D1117;
+        --slate-800: #161B22;
+        --slate-700: #30363D;
+        --brand-primary: #38BDF8;
+        --brand-secondary: #7DD3FC;
+        --success: #22C55E;
+        --warning: #EAB308;
+        --danger: #EF4444;
+        --text-primary: #E6EDF3;
+        --text-secondary: #848D97;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--slate-900);
+        color: var(--text-primary);
+        background-image: radial-gradient(circle at 1px 1px, var(--slate-700) 1px, transparent 0);
+        background-size: 2rem 2rem;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--slate-800);
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--slate-700);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #434a53;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "docx": "https://aistudiocdn.com/docx@^8.5.0",
+    "file-saver": "https://aistudiocdn.com/file-saver@^2.0.5",
+    "pdfjs-dist": "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs",
+    "pdfjs-dist/build/pdf.worker.min.mjs": "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.min.mjs",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-900 text-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

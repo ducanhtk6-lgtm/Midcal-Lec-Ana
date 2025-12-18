@@ -1,0 +1,5 @@
+{
+  "name": "Medical Lecture Analyzer",
+  "description": "An AI-powered tool to analyze medical lectures and images. Score and refine lecture segments based on slide content and transcripts, or get detailed analysis on medical images.",
+  "requestFramePermissions": []
+}

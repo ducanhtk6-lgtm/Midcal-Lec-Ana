@@ -3,9 +3,9 @@ export type Stage = 'idle' | 'segmentation' | 'aggregating' | 'pending_approval'
 
 export type JobStatus = 'pending' | 'processing' | 'completed' | 'failed';
 
-export type ModelName = 'gemini-2.5-flash' | 'gemini-2.5-pro' | 'gemini-3-pro-preview';
+export type ModelName = 'gemini-2.5-flash' | 'gemini-2.5-pro' | 'gemini-3-pro-preview' | 'gemini-3-flash';
 
-export const AVAILABLE_MODELS: ModelName[] = ['gemini-2.5-flash', 'gemini-2.5-pro', 'gemini-3-pro-preview'];
+export const AVAILABLE_MODELS: ModelName[] = ['gemini-2.5-flash', 'gemini-2.5-pro', 'gemini-3-pro-preview', 'gemini-3-flash'];
 
 export type AnalysisSubStage = 'queued' | 'analyzing' | 'scoring' | 'refining' | 'compiling';
 
